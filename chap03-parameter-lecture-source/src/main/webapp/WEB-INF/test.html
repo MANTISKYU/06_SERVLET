@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parameter</title>
+</head>
+<body>
+<h1>Request Parameter</h1>
+<h3>Get 방식의 요청</h3>
+<h4>form 태그를 이용한 get 방식 요청</h4>
+
+<form action="querystring" method="get">
+    <label>이름 : </label><input TYPE="text" name="name">
+    <br>
+    <label>나이 : </label><input TYPE="number" name="age">
+    <br>
+    <label>생일 : </label><input TYPE="date" name="birthday">
+    <br>
+    <label>성별 : </label>
+    <input TYPE="radio" name="gender" id="male" value="N"><label for="male">남자</label>
+    <input TYPE="radio" name="gender" id="female" value="N"><label for="male">여자</label>
+    <br>
+    <label>국적 : </label>
+    <select name="national">
+        <option value="ko">한국</option>
+        <option value="ch">중국</option>
+        <option value="jp">일본</option>
+        <option value="etc">기타</option>
+    </select>
+    <br>
+    <label>취미 : </label>
+    <input type="checkbox" name="hobbies" id="movie"><label for="movie">영화</label>
+    <input type="checkbox" name="hobbies" id="music"><label for="music">음악</label>
+    <input type="checkbox" name="hobbies" id="sleep"><label for="sleep">취침</label>
+
+    <input type="submit" value="GET 요청">
+</form>
+</body>
+</html>
